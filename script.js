@@ -21,6 +21,7 @@ function removeTransition(e) {
 
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
 window.addEventListener('keydown', playSound);
 
 
@@ -28,6 +29,6 @@ window.addEventListener('keydown', playSound);
 // window.addEventListener('keyup', e => {
 //     const key = document.querySelector(`.key[data-key='${e.keyCode}']`)
 //     if (!key) return;
-//     const off = document.querySelector(`div[data-key="${e.keyCode}"]`).classList.remove('playing');
+//     document.querySelector(`div[data-key="${e.keyCode}"]`).classList.remove('playing');
 // })  
 
